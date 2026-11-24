@@ -148,7 +148,7 @@ describe('App', () => {
     render(<App />);
     expect(
       screen.getByRole('heading', {
-        name: /rdr2 prdr to jpeg \/ png converter/i,
+        name: /prdr to jpeg \/ png converter/i,
       }),
     ).toBeInTheDocument();
     expect(screen.getByText(/documents\\rockstar games/i)).toBeInTheDocument();
@@ -218,7 +218,9 @@ describe('App', () => {
     ).toBeInTheDocument();
 
     // First PNG download encodes once
-    await userEvent.click(screen.getByRole('button', { name: 'Download .PNG' }));
+    await userEvent.click(
+      screen.getByRole('button', { name: 'Download .PNG' }),
+    );
     await waitFor(() => {
       expect(toBlobSpy).toHaveBeenCalledTimes(1);
       expect(downloadSpy).toHaveBeenLastCalledWith(
@@ -228,7 +230,9 @@ describe('App', () => {
     });
 
     // Second PNG download reuses cache
-    await userEvent.click(screen.getByRole('button', { name: 'Download .PNG' }));
+    await userEvent.click(
+      screen.getByRole('button', { name: 'Download .PNG' }),
+    );
     await waitFor(() => {
       expect(toBlobSpy).toHaveBeenCalledTimes(1);
       expect(downloadSpy).toHaveBeenCalledTimes(3);
