@@ -255,9 +255,6 @@ const App = () => {
             alt="RDR2 PRDR Converter"
             className="w-16 h-16 mx-auto mb-3 border border-[var(--rdr-border)] shadow-lg"
           />
-          <p className="text-[11px] uppercase tracking-[0.28em] text-[var(--rdr-crimson-text)] font-semibold">
-            Red Dead Redemption II • Photo Mode
-          </p>
           <h1 className="font-rdr-title rdr-title-shadow text-4xl sm:text-5xl text-[var(--rdr-text)] mt-1.5">
             PRDR to JPEG / PNG Converter
           </h1>
@@ -394,7 +391,7 @@ const App = () => {
               type="button"
               onClick={() => setErrors([])}
               aria-label="Dismiss errors"
-              className="cursor-pointer border border-[var(--rdr-border)] hover:border-[var(--rdr-border-strong)] w-6 h-6 flex items-center justify-center text-xs leading-none"
+              className="rdr-icon-btn cursor-pointer border border-[var(--rdr-border)] enabled:hover:border-[var(--rdr-crimson)] enabled:hover:text-[var(--rdr-on-crimson)] w-6 h-6 flex items-center justify-center text-xs leading-none"
             >
               ✕
             </button>

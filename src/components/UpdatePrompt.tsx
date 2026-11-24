@@ -25,7 +25,7 @@ const UpdatePrompt = () => {
       <button
         type="button"
         onClick={() => setNeedRefresh(false)}
-        className="cursor-pointer border border-[var(--rdr-border)] hover:border-[var(--rdr-border-strong)] text-[var(--rdr-text-muted)] hover:text-[var(--rdr-text)] w-6 h-6 flex items-center justify-center text-xs transition-colors leading-none"
+        className="rdr-icon-btn cursor-pointer border border-[var(--rdr-border)] enabled:hover:border-[var(--rdr-crimson)] text-[var(--rdr-text-muted)] enabled:hover:text-[var(--rdr-on-crimson)] w-6 h-6 flex items-center justify-center text-xs leading-none"
         aria-label="Dismiss"
       >
         ✕

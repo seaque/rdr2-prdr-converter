@@ -87,7 +87,7 @@ const PhotoCard = ({
           onClick={onRemove}
           disabled={busy}
           aria-label={`Remove ${outputFileName}`}
-          className="absolute top-2 right-2 cursor-pointer bg-[#0b0a09]/85 border border-[#efe7d8]/25 hover:border-[#d4241e] hover:bg-[#b81d18] text-[#efe7d8] w-7 h-7 flex items-center justify-center text-xs transition-colors"
+          className="rdr-icon-btn absolute top-2 right-2 cursor-pointer bg-[#0b0a09]/85 border border-[#efe7d8]/25 enabled:hover:border-[var(--rdr-crimson)] text-[#efe7d8] w-7 h-7 flex items-center justify-center text-xs"
         >
           ✕
         </button>
@@ -112,9 +112,7 @@ const PhotoCard = ({
               </span>
             )}
             {inGameDate && (
-              <span className="rdr-chip px-2 py-0.5">
-                In-game {inGameDate}
-              </span>
+              <span className="rdr-chip px-2 py-0.5">In-game {inGameDate}</span>
             )}
             {metadata.width && metadata.height && (
               <span className="rdr-chip px-2 py-0.5">
