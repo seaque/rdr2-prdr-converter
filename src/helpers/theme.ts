@@ -5,7 +5,7 @@ export const THEME_STORAGE_KEY = 'rdr2-prdr-theme';
 
 export const THEME_COLORS: Record<ResolvedTheme, string> = {
   dark: '#0b0a09',
-  light: '#efe3cc',
+  light: '#f3f3f3',
 };
 
 const isThemePreference = (value: string | null): value is ThemePreference =>

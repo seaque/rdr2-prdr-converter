@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @layer base {
   :root,
@@ -45,38 +45,33 @@
   }
 
   [data-theme='light'] {
-    --rdr-bg-base: #efe3cc;
-    --rdr-bg-gradient: radial-gradient(
-      ellipse at 50% 0%,
-      #f8f0df 0%,
-      #efe3cc 55%,
-      #dfcfb1 100%
-    );
-    --rdr-grain-opacity: 0.06;
-    --rdr-surface: rgba(247, 239, 223, 0.92);
-    --rdr-surface-solid: #f7efdf;
-    --rdr-surface-btn: rgba(235, 222, 198, 0.95);
-    --rdr-surface-chip: rgba(231, 217, 191, 0.9);
-    --rdr-surface-toast: #f6eedc;
-    --rdr-surface-dropzone: rgba(247, 239, 223, 0.92);
-    --rdr-text: #1c1510;
-    --rdr-text-secondary: #342921;
-    --rdr-text-muted: #5c4b3c;
-    --rdr-title-shadow: 0 2px 4px rgba(28, 21, 16, 0.14);
-    --rdr-border: rgba(44, 33, 24, 0.24);
-    --rdr-border-strong: rgba(44, 33, 24, 0.42);
-    --rdr-border-bracket: rgba(44, 33, 24, 0.65);
-    --rdr-rule-mid: rgba(44, 33, 24, 0.36);
-    --rdr-inset-frame: rgba(145, 118, 86, 0.22);
+    --rdr-bg-base: #f3f3f3;
+    --rdr-bg-gradient: none;
+    --rdr-grain-opacity: 0.025;
+    --rdr-surface: rgba(255, 255, 255, 0.92);
+    --rdr-surface-solid: #ffffff;
+    --rdr-surface-btn: rgba(232, 232, 232, 0.95);
+    --rdr-surface-chip: rgba(235, 235, 235, 0.9);
+    --rdr-surface-toast: #ffffff;
+    --rdr-surface-dropzone: rgba(255, 255, 255, 0.92);
+    --rdr-text: #141414;
+    --rdr-text-secondary: #383838;
+    --rdr-text-muted: #5e5e5e;
+    --rdr-title-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --rdr-border: rgba(18, 18, 18, 0.18);
+    --rdr-border-strong: rgba(18, 18, 18, 0.38);
+    --rdr-border-bracket: rgba(18, 18, 18, 0.65);
+    --rdr-rule-mid: rgba(18, 18, 18, 0.32);
+    --rdr-inset-frame: rgba(18, 18, 18, 0.08);
     --rdr-card-shadow:
-      0 0 0 1px rgba(164, 24, 20, 0.3), 0 10px 20px rgba(44, 33, 24, 0.16);
+      0 0 0 1px rgba(164, 24, 20, 0.3), 0 10px 20px rgba(0, 0, 0, 0.1);
     --rdr-crimson: #9f1814;
     --rdr-crimson-bright: #b81d18;
     --rdr-crimson-text: #9f1814;
-    --rdr-on-crimson: #faf3e6;
-    --rdr-keycap-bg: #1c1510;
-    --rdr-keycap-text: #f6eedc;
-    --rdr-alert-bg: #f4deda;
+    --rdr-on-crimson: #ffffff;
+    --rdr-keycap-bg: #141414;
+    --rdr-keycap-text: #f3f3f3;
+    --rdr-alert-bg: #fbe9e8;
     --rdr-alert-text: #591412;
     --rdr-alert-title: #2c0d0b;
     --rdr-drag-border: #047857;

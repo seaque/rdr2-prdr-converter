@@ -236,7 +236,7 @@ describe('App', () => {
 
     // Switch back to JPEG + Original filename
     await userEvent.click(
-      screen.getByRole('button', { name: /jpeg \(lossless original\)/i }),
+      screen.getByRole('button', { name: /jpeg \( original\)/i }),
     );
     await userEvent.click(
       screen.getByRole('button', { name: /original filename/i }),

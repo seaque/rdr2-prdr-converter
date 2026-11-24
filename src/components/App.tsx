@@ -259,7 +259,7 @@ const App = () => {
             Red Dead Redemption II • Photo Mode
           </p>
           <h1 className="font-rdr-title rdr-title-shadow text-4xl sm:text-5xl text-[var(--rdr-text)] mt-1.5">
-            RDR2 PRDR to JPEG / PNG Converter
+            PRDR to JPEG / PNG Converter
           </h1>
           <svg
             aria-hidden="true"
@@ -276,12 +276,7 @@ const App = () => {
           <p className="text-sm text-[var(--rdr-text-secondary)] mt-4 max-w-2xl mx-auto leading-relaxed">
             Extract Red Dead Redemption 2 &amp; RedM Photo Mode captures (
             <code className="text-[var(--rdr-text)] font-semibold">PRDR*</code>)
-            to lossless JPEG or PNG directly in your browser.
-          </p>
-          <p className="text-xs text-[var(--rdr-text-muted)] mt-1.5">
-            <strong className="text-[var(--rdr-text)]">100% private:</strong>{' '}
-            all binary parsing and conversion happen locally on your device. No
-            files are uploaded.
+            to JPEG or PNG directly in your browser.
           </p>
         </header>
 
@@ -300,7 +295,7 @@ const App = () => {
                 onClick={() => setFormat('jpeg')}
                 className={toggleBtnClass(format === 'jpeg')}
               >
-                JPEG (Lossless Original)
+                JPEG ( Original)
               </button>
               <button
                 type="button"
@@ -454,19 +449,24 @@ const App = () => {
           </section>
         )}
 
-        <footer className="mt-10 pt-4 border-t border-[var(--rdr-border)] flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] uppercase tracking-wider text-[var(--rdr-text-muted)]">
-          <span className="inline-flex items-center gap-1.5">
-            <span className="rdr-keycap">DROP</span> Load Captures
-          </span>
-          <span className="inline-flex items-center gap-1.5">
-            <span className="rdr-keycap">CLICK</span> Save Photo
-          </span>
-          <span className="inline-flex items-center gap-1.5">
-            <span className="rdr-keycap">ZIP</span> Export Roll
-          </span>
-          <span className="inline-flex items-center gap-1.5">
-            <span className="rdr-keycap">LOCAL</span> Browser-Only
-          </span>
+        <footer className="mt-10">
+          <div className="rdr-rule-sharp" />
+          <div className="pt-3 flex items-center justify-center gap-1.5 font-rdr-prompts text-xs text-[var(--rdr-text-secondary)]">
+            <span>Vibecoded with</span>
+            <svg
+              role="img"
+              aria-label="Gemini"
+              viewBox="0 0 24 24"
+              className="w-4 h-4 shrink-0 text-[var(--rdr-crimson)]"
+              fill="none"
+            >
+              <p>Gemini</p>
+              <path
+                d="M12 0C12 6.627 6.627 12 0 12c6.627 0 12 5.373 12 12 0-6.627 5.373-12 12-12-6.627 0-12-5.373-12-12Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
         </footer>
       </main>
     </>

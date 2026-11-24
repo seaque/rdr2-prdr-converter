@@ -1,6 +1,6 @@
-# RDR2 PRDR to JPEG / PNG Converter
+# PRDR to JPEG / PNG Converter
 
-A 100% client-side web tool to convert Red Dead Redemption 2 and RedM Photo Mode (`PRDR`) files into lossless **JPEG (`.jpg`)** or **PNG (`.png`)** images directly in your browser. No files are ever uploaded to any server.
+A 100% client-side web tool to convert Red Dead Redemption 2 and RedM Photo Mode (`PRDR`) files into  **JPEG (`.jpg`)** or **PNG (`.png`)** images directly in your browser. No files are ever uploaded to any server.
 
 ## How PRDR Files Work
 
@@ -14,7 +14,7 @@ Red Dead Redemption 2 stores in-game Photo Mode captures as extensionless `PRDR*
 
 ### JPEG vs PNG Output
 
-- **JPEG (Lossless Original)**: Extracts the exact embedded JPEG bytes (`offset 300` up to `jpegLength`, or trimmed cleanly at `FF D9`) without re-encoding or trailing Rockstar padding.
+- **JPEG (Original)**: Extracts the exact embedded JPEG bytes (`offset 300` up to `jpegLength`, or trimmed cleanly at `FF D9`) without re-encoding or trailing Rockstar padding.
 - **PNG**: Decodes the extracted JPEG locally using the browser Canvas API and exports an uncompressed PNG.
 
 ## Where to Find PRDR Files on PC

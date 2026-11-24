@@ -14,7 +14,7 @@ export default defineConfig({
       registerType: 'prompt',
       includeAssets: [
         'favicon.ico',
-        'favicon.svg',
+        'favicon.png',
         'favicon-16x16.png',
         'favicon-32x32.png',
         'apple-touch-icon.png',
@@ -25,10 +25,10 @@ export default defineConfig({
         id: base,
         start_url: base,
         scope: base,
-        name: 'RDR2 PRDR to JPEG / PNG Converter',
+        name: 'PRDR to JPEG / PNG Converter',
         short_name: 'PRDR Converter',
         description:
-          'Convert Red Dead Redemption 2 and RedM PRDR Photo Mode files to lossless JPEG or PNG images locally in your browser.',
+          'Convert Red Dead Redemption 2 and RedM PRDR Photo Mode files to  JPEG or PNG images locally in your browser.',
         theme_color: '#0b0a09',
         background_color: '#0b0a09',
         display: 'standalone',
